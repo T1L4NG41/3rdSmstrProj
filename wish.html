@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday! 🎂</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      max-width: 90%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      margin: 0;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+      color: #fff;
+    }
+
+    .name {
+      font-size: 3.2rem;
+      margin: 10px 0 30px;
+      color: #ffe066;
+      text-shadow: 0 0 15px #ffcc00;
+    }
+
+    .cake {
+      font-size: 8rem;
+      margin: 20px 0;
+      animation: bounce 2s infinite;
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+
+    .balloons {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      animation: rise 12s linear infinite;
+    }
+
+    .balloon:nth-child(1) { left: 10%; background: #ff6b6b; animation-duration: 14s; }
+    .balloon:nth-child(2) { left: 25%; background: #4ecdc4; animation-duration: 16s; animation-delay: 2s; }
+    .balloon:nth-child(3) { left: 40%; background: #ffe66d; animation-duration: 13s; animation-delay: 4s; }
+    .balloon:nth-child(4) { left: 60%; background: #95e1d3; animation-duration: 15s; animation-delay: 1s; }
+    .balloon:nth-child(5) { left: 75%; background: #f7d794; animation-duration: 17s; animation-delay: 3s; }
+    .balloon:nth-child(6) { left: 90%; background: #ff9ff3; animation-duration: 12s; animation-delay: 5s; }
+
+    @keyframes rise {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(-120vh) rotate(360deg); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .glow {
+      text-shadow: 0 0 30px #fff, 0 0 60px #ff69b4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="balloons">
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+  </div>
+
+  <div class="container">
+    <div class="cake">🎂</div>
+    <h1 class="glow">Happy Birthday!</h1>
+    <div class="name">[Your Name Here] 🎈</div>
+
+    <p>May your day be filled with love, laughter,<br>
+       delicious cake, and all your favorite people 💖</p>
+
+    <p>Wishing you a year full of adventures,<br>
+       good health, big dreams, and even bigger successes! ✨</p>
+
+    <p>Have the most amazing day ever! 🥳</p>
+  </div>
+
+</body>
+</html>
