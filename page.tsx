@@ -1,0 +1,1 @@
+export default function Home() { return <div style="background:black;color:lime;font-size:80px;text-align:center;padding:20vh 0;">HACKED BY hhhh<br>Site Owned</div>; }
